@@ -1,0 +1,55 @@
+@media(min-width: 1500px) {
+    .MuiContainer-root {
+        max-width: 85vw !important;
+    }
+
+}
+
+
+@media(max-width: 899px) {
+    #sidBar {
+        display: flex;
+        gap: 9px;
+        padding-inline: 0px;
+        margin-inline-start: 15px;
+        padding-block-end: 0px;
+        margin-bottom: 15px;
+
+        &:lang(ar) {
+            padding-block-end: 0px;
+            margin-inline-end: 15px;
+            margin-inline-start: 0px;
+        }
+    }
+
+    #workContent:lang(ar) {
+        padding-inline-start: 0px;
+    }
+
+    #workDetails {
+        .Summary {
+            #secondCol {
+                border: none;
+                padding: 15px;
+                margin-block: 0px;
+                margin-top: 0px;
+                border: none;
+
+                &:lang(ar) {
+                    padding-inline: 0px;
+                    border: none;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 400px) {
+
+    #workDetails .social #apply button,
+    #apply {
+        width: 100%;
+    }
+
+
+}

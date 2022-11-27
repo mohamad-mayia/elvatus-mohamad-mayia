@@ -1,0 +1,27 @@
+#searchContainer {
+    background: $form-background;
+    border: 1px solid $form-border;
+    border-top: none;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+
+    #searchForm {
+        @include d-flex;
+        @include Width100;
+        @include justify-content-space-between;
+        gap: 15px;
+        padding-block: 30px;
+
+        .MuiTextField-root {
+            background-color: $white;
+            border-radius: 4px;
+        }
+
+        button {
+            text-transform: none;
+        }
+
+
+
+    }
+}

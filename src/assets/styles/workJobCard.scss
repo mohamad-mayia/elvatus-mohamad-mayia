@@ -1,0 +1,66 @@
+#sidBar {
+    max-height: calc(100vh - 25px - $nav-height-wide-screen);
+    overflow-y: auto;
+    padding-inline-end: 8px;
+    padding-block-start: 0px;
+
+
+    .workJobCard.active {
+        border-color: $pagination-border-color
+    }
+
+    &::-webkit-scrollbar {
+        width: 5px;
+        height: 5px;
+    }
+
+    &::-webkit-scrollbar-track {
+        background: $job-card-border-color;
+        padding: 2px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: $scroll-color;
+    }
+
+    .workJobCard {
+        padding: 15px;
+        font-family: $deault-english-font;
+        background: $white;
+        border: 2px solid $job-card-border-color;
+        border-radius: 0.5rem;
+        box-shadow: 0px 0px 11px 1px $job-card-border-color;
+        margin-bottom: 15px;
+        cursor: pointer;
+
+        &:hover {
+            border-color: $pagination-border-color
+        }
+
+        h3 {
+            @include one-row-text;
+            margin: 0px;
+            font-size: 0.8rem;
+        }
+
+        label {
+            @include one-row-text;
+            display: block;
+            padding-top: 9px;
+            text-transform: capitalize;
+            font-size: 0.8rem;
+            padding-bottom: 3px;
+            border-bottom: 2px solid $job-card-border-color;
+            margin-bottom: 4px;
+            cursor: pointer;
+
+            &:last-of-type {
+                border-bottom: none;
+            }
+
+
+        }
+
+
+    }
+}

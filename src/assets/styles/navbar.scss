@@ -1,0 +1,16 @@
+#navbar {
+    @include d-flex;
+    @include align-items-center;
+    background-color: $black;
+    height: $nav-height-wide-screen;
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    top: 0px;
+
+    img {
+        @include maxWidth100;
+        filter: brightness(0) invert(1);
+        width: $logo-width
+    }
+}
